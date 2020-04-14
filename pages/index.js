@@ -2,10 +2,14 @@ import Head from 'next/head'
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 class Home extends Component {
+
   componentDidMount() {
+    $(window).on('load', function () {
+      $('.preloader').fadeOut(200);
+    });
     const script1 = document.createElement("script");
     script1.async = true;
-    script1.src = "https://iwt-assign.omkarethon.now.sh/assets/js/main.js"
+    script1.src = "https://omkardeshmukh.now.sh/assets/js/main.js"
     document.body.appendChild(script1);
   }
   render() {
