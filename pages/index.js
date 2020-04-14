@@ -29,9 +29,9 @@ class Home extends Component {
         </head>
 
         <body>
-          {/* <div class="preloader">
+          <div class="preloader">
             <img src="https://media.giphy.com/media/kzVL1ZLuGfEfm/giphy.gif" alt="preloader" width="15%" />
-          </div> */}
+          </div>
           <header class="fixed-top header">
             <div class="top-header py-2">
               <div class="container">
@@ -62,8 +62,8 @@ class Home extends Component {
                         href="#google_translate_element">HINDI</a></li>
                       <li class="list-inline-item">
                         <form class="form-inline my-2 my-lg-0 ml-auto">
-                          <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
-                          <button class="form-control" type="submit"><i class="fas fa-search"></i>
+                          <input class="form-control search" type="search" placeholder="Search" aria-label="Search" />
+                          <button class="form-control search" type="submit"><i class="fas fa-search"></i>
                           </button>
                         </form>
                       </li>
@@ -88,7 +88,7 @@ class Home extends Component {
                       <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">Students
                 </a>
-                      <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                      <div class="dropdown-menu dropdown-primary bg-black" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="#">Action</a>
                         <a class="dropdown-item" href="#">Another action</a>
                         <a class="dropdown-item" href="#">Something else here</a>
@@ -147,7 +147,7 @@ class Home extends Component {
                     <div class="col-md-8">
                       <h1 class="text-white" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3"
                         data-animation-in="fadeInLeft" data-delay-in=".1">Indian Institute of Information Technology Kota</h1>
-                      <p class="text-muted mb-3 pt-4" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3"
+                      <p class="text-muted mb-3 pt-4 fs20" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3"
                         data-animation-in="fadeInLeft" data-delay-in=".4">An Institute of National
                         Importance under an Act of
                   Parliament. </p>
@@ -189,7 +189,7 @@ class Home extends Component {
             <div class="container-fluid p-0">
               <div class="row no-gutters">
                 <div class="col-xl-4 col-lg-5 align-self-end">
-                  <img class="img-fluid w-100" src="assets/img/banner/banner-feature.png" alt="banner-feature" />
+                  <img class="img-fluid w-100" src="assets/img/stud.png" alt="banner-feature" />
                 </div>
                 <div class="col-xl-8 col-lg-7">
                   <div class="row feature-blocks bg-gray justify-content-between">
@@ -236,7 +236,7 @@ class Home extends Component {
                   <a href="" class="btn btn-primary-outline">Explore More</a>
                 </div>
                 <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
-                  <img class="img-fluid w-100" src="assets/img/about/about-us.jpg" alt="about image" />
+                  <img class="img-fluid w-100" src="assets/img/backgrounds/grp.png" alt="about image" />
                 </div>
               </div>
             </div>
@@ -327,7 +327,7 @@ class Home extends Component {
               </div>
             </div>
           </section>
-          <section class="section pt-0">
+          <section class="section pt-3">
             <div class="container">
               <div class="row">
                 <div class="col-12">
@@ -341,8 +341,8 @@ class Home extends Component {
                     <img class="card-img-top rounded-0" src="assets/img/blog/post-1.jpg" alt="Post thumb" />
                     <div class="card-body">
                       <ul class="list-inline mb-3">
-                        <li class="list-inline-item mr-3 ml-0">August 28, 2018</li>
-                        <li class="list-inline-item mr-3 ml-0">By Somrat Sorkar</li>
+                        <li class="list-inline-item mr-3 ml-0">Jan 26, 2020</li>
+                        <li class="list-inline-item mr-3 ml-0">By Reporter</li>
                       </ul>
                       <a href="">
                         <h4 class="card-title">Lorem ipsum dolor amet, adipisicing eiusmod tempor.</h4>
@@ -358,8 +358,8 @@ class Home extends Component {
                     <img class="card-img-top rounded-0" src="assets/img/blog/post-2.jpg" alt="Post thumb" />
                     <div class="card-body">
                       <ul class="list-inline mb-3">
-                        <li class="list-inline-item mr-3 ml-0">August 13, 2018</li>
-                        <li class="list-inline-item mr-3 ml-0">By Jonathon Drew</li>
+                        <li class="list-inline-item mr-3 ml-0">Jan 26, 2020</li>
+                        <li class="list-inline-item mr-3 ml-0">By Reporter</li>
                       </ul>
                       <a href="">
                         <h4 class="card-title">Lorem ipsum dolor amet, adipisicing eiusmod tempor.</h4>
@@ -375,8 +375,8 @@ class Home extends Component {
                     <img class="card-img-top rounded-0" src="assets/img/blog/post-3.jpg" alt="Post thumb" />
                     <div class="card-body">
                       <ul class="list-inline mb-3">
-                        <li class="list-inline-item mr-3 ml-0">August 24, 2018</li>
-                        <li class="list-inline-item mr-3 ml-0">By Alex Pitt</li>
+                        <li class="list-inline-item mr-3 ml-0">Jan 26, 2020</li>
+                        <li class="list-inline-item mr-3 ml-0">By Reporter</li>
                       </ul>
                       <a href="">
                         <h4 class="card-title">Lorem ipsum dolor amet, adipisicing eiusmod tempor.</h4>
@@ -456,8 +456,7 @@ class Home extends Component {
                   <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
                     <a class="logo-footer" href="index.html"><img class="img-fluid mb-4" src="assets/img/logo.png" alt="logo" /></a>
                     <ul class="list-unstyled" >
-                      <li class="mb-2">Made with <i class="fas fa-heart"></i> & <i class="fas fa-coffee"></i>
-                  by:
+                      <li class="mb-2">Made with <i class="fas fa-heart"></i> & <i class="fas fa-coffee"></i> by:
                 </li>
                       <li class="mb-2">Omkar Deshmukh</li>
                       <li class="mb-2">ID: 2019kucp1009</li>
