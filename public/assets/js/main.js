@@ -24,7 +24,7 @@
         });
     });
 
-    //Hero Slider
+    //Slider
     $('.hero-slider').slick({
         autoplay: true,
         autoplaySpeed: 7500,

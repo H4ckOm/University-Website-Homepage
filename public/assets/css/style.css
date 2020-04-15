@@ -583,6 +583,12 @@ textarea.form-control {
 .hero-section {
   padding: 250px 0 290px;
 }
+@media (max-width: 1000px) {
+  .hero-section {
+    padding-top: 100px;
+    padding-bottom: 150px;
+  }
+}
 
 .hero-slider .prevArrow,
 .hero-slider .nextArrow {
