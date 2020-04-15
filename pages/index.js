@@ -1,8 +1,25 @@
 import Head from 'next/head'
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
-class Home extends Component {
+import classnames from "classnames";
+export default class Home extends Component {
 
+  componentDidMount() {
+    $('[data-background]').each(function () {
+      $(this).css({
+        'background-image': 'url(' + $(this).data('background') + ')'
+      });
+    });
+
+  }
+  componentDidMount() {
+    $(window).scroll(function () {
+      if ($('header').offset().top > 10) {
+        $('.navbar').addClass('hide');
+      } else {
+        $('.navbar').removeClass('hide');
+      }
+    });
+  }
   componentDidMount() {
     $(window).on('load', function () {
       $('.preloader').fadeOut(200);
@@ -33,51 +50,53 @@ class Home extends Component {
         </head>
 
         <body>
-          <div class="preloader">
-            <img src="https://media.giphy.com/media/kzVL1ZLuGfEfm/giphy.gif" alt="preloader" width="15%" />
+          <div className="preloader">
+            <img src="https://media.giphy.com/media/kzVL1ZLuGfEfm/giphy.gif" alt="preloader" />
           </div>
           <header class="fixed-top header">
             <div class="top-header py-2">
-              <div class="container">
-                <div class="row no-gutters">
-                  <div class="col-lg-4 text-center text-lg-left mt-2">
-                    <ul class="list-inline d-inline">
-                      <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i
-                        class="ti-facebook"></i></a></li>
-                      <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i
-                        class="ti-twitter-alt"></i></a></li>
-                      <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i
-                        class="ti-linkedin"></i></a></li>
-                      <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i
-                        class="ti-instagram"></i></a></li>
-                      <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i
-                        class="ti-youtube"></i></a></li>
-                    </ul>
-                  </div>
-                  <div class="col-lg-8 text-center text-lg-right">
-                    <ul class="list-inline">
-                      <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block"
-                        href="">notice</a></li>
-                      <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block"
-                        href="">research</a></li>
-                      <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block"
-                        href="">SCHOLARSHIP</a></li>
-                      <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block"
-                        href="#google_translate_element">HINDI</a></li>
-                      <li class="list-inline-item">
-                        <form class="form-inline my-2 my-lg-0 ml-auto">
-                          <input class="form-control search" type="search" placeholder="Search" aria-label="Search" />
-                          <button class="form-control search" type="submit"><i class="fas fa-search"></i>
-                          </button>
-                        </form>
-                      </li>
-                    </ul>
+              <div className="top-fix-header">
+                <div class="container">
+                  <div class="row no-gutters">
+                    <div class="col-lg-4 text-center text-lg-left mt-2">
+                      <ul class="list-inline d-inline">
+                        <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i
+                          class="ti-facebook"></i></a></li>
+                        <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i
+                          class="ti-twitter-alt"></i></a></li>
+                        <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i
+                          class="ti-linkedin"></i></a></li>
+                        <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i
+                          class="ti-instagram"></i></a></li>
+                        <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i
+                          class="ti-youtube"></i></a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-8 text-center text-lg-right">
+                      <ul class="list-inline">
+                        <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block"
+                          href="">notice</a></li>
+                        <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block"
+                          href="">research</a></li>
+                        <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block"
+                          href="">SCHOLARSHIP</a></li>
+                        <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block"
+                          href="#google_translate_element">HINDI</a></li>
+                        <li class="list-inline-item">
+                          <form class="form-inline my-2 my-lg-0 ml-auto">
+                            <input class="form-control search" type="search" placeholder="Search" aria-label="Search" />
+                            <button class="form-control search" type="submit"><i class="fas fa-search"></i>
+                            </button>
+                          </form>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="" id="navbar">
-              <nav class="navbar navbar-expand-lg navbar-dark">
+              <nav className="navbar navbar-expand-lg navbar-dark">
                 {/* <a class="navbar-brand" href="#">IIIT Kota</a> */}
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -143,6 +162,7 @@ class Home extends Component {
               </nav>
             </div>
           </header>
+
           <section class="hero-section overlay bg-cover" data-background="assets/img/banner/banner.jpeg">
             <div class="container">
               <div class="hero-slider">
@@ -514,12 +534,12 @@ class Home extends Component {
               <div class="container">
                 <div class="row">
                   <div class="col-sm-7 text-sm-left text-center">
-                    <p class="mb-0">Copyright
-                <script>
+                    <p class="mb-0">Copyright ©2020 Indian Institute of Information Technology Kota
+                {/* <script>
                         var CurrentYear = new Date().getFullYear()
                         document.write(CurrentYear)
-                </script>
-                © Indian Institute of Information Technology Kota</p>
+                </script> */}
+                    </p>
                   </div>
                   <div class="col-sm-5 text-sm-right text-center">
                     <ul class="list-inline">
@@ -551,5 +571,3 @@ class Home extends Component {
     );
   }
 }
-
-export default Home
