@@ -480,7 +480,7 @@ export default class Home extends Component {
                   <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
                     <a class="logo-footer" href="index.html"><img class="img-fluid mb-4" src="assets/img/logo.png" alt="logo" /></a>
                     <ul class="list-unstyled" >
-                      <li class="mb-2">Made with <i class="fas fa-heart"></i> & <i class="fas fa-coffee"></i> by:
+                      <li class="mb-2">Made with <i class="fas fa-heart"></i> & <i class="fas fa-wine-bottle"></i> by:
                 </li>
                       <li class="mb-2">Omkar Deshmukh</li>
                       <li class="mb-2">ID: 2019kucp1009</li>
