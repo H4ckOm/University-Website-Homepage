@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+var x = 0;
 class Home extends Component {
 
     componentDidMount() {
