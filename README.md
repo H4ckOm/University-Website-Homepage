@@ -5,7 +5,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Getting Started
 
 ```bash
-git clone https://github.com/Omkarethon/iwt-assignment.git
+git clone https://github.com/H4ckOm/University-Website-Homepage.git
 cd iwt-assignment
 npm install
 ```
